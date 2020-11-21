@@ -1,13 +1,169 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@400;700&display=swap');
+
+:root {
+  --main-color: #262626;
+  --acent-color: #3cbab0;
+  --main-width: 600px;
+  --primary-shadow: -4px -4px 10px rgba(255, 255, 255, 0.05),
+    4px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 15px;
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.main-header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.main-header .links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  height: 100%;
+}
+
+.main-header .links .link {
+  margin: 0 10px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.main-header .links .link:hover {
+  background-color: var(--acent-color);
+}
+
+.logo h2 {
+  font-family: 'Bebas Neue', cursive;
+  font-weight: bold;
+  letter-spacing: 5px;
+  cursor: pointer;
+}
+
+.container {
+  height: calc(100vh - 200px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  max-width: var(--main-width);
+  height: 100%;
+  margin-top: 50px;
+}
+
+.cover-img,
+.project-img {
+  width: 100%;
+}
+
+.decorator {
+  color: var(--acent-color);
+  font-weight: bold;
+}
+
+.btn {
+  padding: 10px 25px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #36a89e;
+}
+
+.primary {
+  background-color: var(--acent-color);
+  font-size: 0.9rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.active {
+  background-color: var(--acent-color);
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.about-me {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+blockquote {
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.subtitle {
+  margin-top: 40px;
+  font-size: 2rem;
+  color: var(--acent-color);
+  font-weight: bold;
+  text-align: center;
+}
+
+/* CARD STYLE */
+.card-container {
+  width: 100%;
+  padding: 20px;
+  margin: 20px 0 20px 0;
+  border-radius: 8px;
+  box-shadow: var(--primary-shadow);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* CARD STYLE END */
+
+.lenguages-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  font-size: 1.1rem;
+}
+
+.leguage-icon {
+  font-size: 4rem;
+}
+
+.testimony {
+  padding: 10px;
+  margin: 0 5px 0 5px;
+}
+
+.teal {
+  background-color: var(--acent-color);
 }
