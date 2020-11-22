@@ -2,7 +2,7 @@ import React from 'react';
 
 const Cover = () => {
   return (
-    <div className="flex flex-column justify-center items-center ma3">
+    <div className="flex flex-column justify-center items-center ma3 custom-height">
       <div className="content">
         <img src="cover.svg" alt="main-cover" className="cover-img" />
         <div className="mv4 f4">

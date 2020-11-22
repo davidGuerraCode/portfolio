@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 const Header = () => {
   return (
-    <header className="main-header mt2 mt-ns-0">
+    <header className="main-header mt2 mt0-ns">
       <div className="logo ph3">
         <h2>
           <Link to="/">David Vásquez</Link>

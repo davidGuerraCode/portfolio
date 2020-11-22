@@ -216,7 +216,7 @@ const AboutMe = () => {
             </Card>
           </div>
         </div>
-        <div className="w-80 mt4">
+        {/* <div className="w-80 mt4">
           <div className="f3 tc b">
             He tenido la oportunidad de trabajar con personas geniales
           </div>
@@ -225,7 +225,7 @@ const AboutMe = () => {
               {testimony}
             </div>
           )}
-        </div>
+        </div> */}
       </div>
     </>
   );
